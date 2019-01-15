@@ -1,6 +1,6 @@
 #!/bin/bash
 
-base="${HOME}/lattice_painter/"
+base="${HOME}/lattice_painter"
 
 year=$(date +%Y)
 
@@ -12,7 +12,7 @@ hour=$(date +%H)
 
 min=$(date +%M)
 
-[ ! -f $base ] && echo "${base} not existed" && exit 127
+[ ! -d $base ] && echo "${base} not existed" && exit 127
 
 t=${base}/rubbish/${year}/${month}
 
