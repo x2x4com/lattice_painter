@@ -21,4 +21,4 @@ t=${base}/rubbish/${year}/${month}
 echo "balabala ${hour}-${min}" >> $t/$hour
 
 cd $base
-git add . && git commit -m "update ${year}/${month}/${day} - ${hour}:${min}" && git push
+git pull && git add . && git commit -m "update ${year}/${month}/${day} - ${hour}:${min}" && git push
