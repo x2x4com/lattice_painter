@@ -18,7 +18,7 @@ t=${base}/rubbish/${year}/${month}
 
 [ ! -d "$t" ] && mkdir -p $t
 
-echo "balabala ${hour}-${min}" >> $t/$hour
+echo "balabala ${hour}-${min}" >> $t/$day
 
 cd $base
 git pull && git add . && git commit -m "update ${year}/${month}/${day} - ${hour}:${min}" && git push
